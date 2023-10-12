@@ -6,7 +6,7 @@ import eslint from 'vite-plugin-eslint';
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
-    outDir: '../dist',
+    outDir: 'dist',
     emptyOutDir: true,
   },
   plugins: [
@@ -22,6 +22,8 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+      find: './runtimeConfig',
+      replacement: './runtimeConfig.browser',
     },
   },
   server: {
