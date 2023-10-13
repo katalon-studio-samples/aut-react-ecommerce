@@ -93,10 +93,13 @@ const Filters = ({ closeModal }) => {
             onChange={onBrandFilterChange}
           >
             <option value="">All Brands</option>
-            <option value="salt">Salt Maalat</option>
-            <option value="betsin">Betsin Maalat</option>
-            <option value="black">Black Kibal</option>
-            <option value="sexbomb">Sexbomb</option>
+            <option value="Indoor-Plants">Indoor Plants</option>
+            <option value="Office-Bonsai">Office Bonsai</option>
+            <option value="Terrarium-miniatures">Terrarium miniatures</option>
+            <option value="Bonsai-pot">Bonsai pot</option>
+            <option value="Stone-Lotus">Stone Lotus</option>
+            <option value="Cactus">Cactus</option>
+            <option value="Terrarium-Accessories">Terrarium Accessories</option>
           </select>
         )}
       </div>
