@@ -1,8 +1,9 @@
-import { FacebookOutlined, GithubFilled, GoogleOutlined } from '@ant-design/icons';
+import { FacebookOutlined, GithubFilled, GoogleOutlined, CloudOutlined } from '@ant-design/icons';
 import PropType from 'prop-types';
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { signInWithFacebook, signInWithGithub, signInWithGoogle } from '@/redux/actions/authActions';
+import { signInWithFacebook, signInWithGithub, signInWithGoogle, signInWithMicrosoft } from '@/redux/actions/authActions';
+import MicrosoftIcon from "@/components/common/MicrosoftIcon.svg";
 
 const SocialLogin = ({ isLoading }) => {
   const dispatch = useDispatch();
@@ -17,6 +18,10 @@ const SocialLogin = ({ isLoading }) => {
 
   const onSignInWithGithub = () => {
     dispatch(signInWithGithub());
+  };
+
+  const onSignInWithMicrosoft = () => {
+    dispatch(signInWithMicrosoft());
   };
 
   return (
@@ -48,6 +53,19 @@ const SocialLogin = ({ isLoading }) => {
       >
         <GithubFilled />
         Continue with GitHub
+      </button>
+      <button
+        className="button auth-provider-button provider-microsoft"
+        disabled={isLoading}
+        onClick={onSignInWithMicrosoft}
+        type="button"
+      >
+        <img
+          src={MicrosoftIcon}
+          style={{ width: '15px', height: '15px', marginLeft: '-30px' }}
+          alt="Micrsoft icon"
+        />
+        <div style={{ paddingLeft: '30px' }} >Continue with Microsoft</div>
       </button>
     </div>
   );

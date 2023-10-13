@@ -30,6 +30,9 @@ class Firebase {
   signInWithGithub = () =>
     this.auth.signInWithPopup(new app.auth.GithubAuthProvider());
 
+  signInWithMicrosoft = () =>
+    this.auth.signInWithPopup(new app.auth.OAuthProvider('microsoft.com'));
+
   signOut = () => this.auth.signOut();
 
   passwordReset = (email) => {

@@ -4,11 +4,11 @@
   justify-content: center;
   padding: $l-size;
   padding-top: $m-size;
-  
+
   @include tablet {
     flex-direction: column;
   }
-  
+
   @include mobile {
     padding: $m-size;
   }
@@ -85,7 +85,7 @@
   background: $color-facebook;
   color: $white;
   border: 1px solid $color-facebook;
-  
+
   &:hover {
     background: $color-facebook-hover;
     border: 1px solid $color-facebook;
@@ -97,10 +97,22 @@
   background: $color-github;
   color: $white;
   border: 1px solid $color-github;
-  
+
   &:hover {
     background: $color-github-hover;
     border: 1px solid $color-github;
+  }
+}
+
+.provider-microsoft {
+  @extend .button;
+  background: $color-microsoft;
+  color: $gray-01;
+  border: 1px solid $gray-01;
+
+  &:hover {
+    background: $border-color;
+    border: 1px solid $border-color;
   }
 }
 
@@ -214,11 +226,11 @@
 .forgot_password {
   width: 50%;
   margin: auto;
-  
+
   @include mobile {
     width: 100%;
     padding: $s-size;
-  } 
+  }
 }
 
 .auth-success {
