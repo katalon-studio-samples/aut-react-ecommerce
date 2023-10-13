@@ -4,6 +4,7 @@ import { CustomInput } from '@/components/formik';
 import { FORGOT_PASSWORD, SIGNUP } from '@/constants/routes';
 import { Field, Form, Formik } from 'formik';
 import { useDocumentTitle, useScrollTop } from '@/hooks';
+import logo from '@/images/logo-remask.png';
 import PropType from 'prop-types';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -67,6 +68,9 @@ const SignIn = ({ history }) => {
             <div className="auth-main">
               <h3>Sign in to K Eco</h3>
               <br />
+              <div className="sign-in-logo">
+                <img src={logo} alt="" />
+              </div>
               <div className="auth-wrapper">
                 <Formik
                   initialValues={{

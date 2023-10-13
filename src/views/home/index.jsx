@@ -5,7 +5,7 @@ import { FEATURED_PRODUCTS, RECOMMENDED_PRODUCTS, SHOP } from '@/constants/route
 import {
   useDocumentTitle, useFeaturedProducts, useRecommendedProducts, useScrollTop
 } from '@/hooks';
-import bannerImg from '@/images/banner-girl.png';
+import bannerImg from '@/images/banner-tree-3.png';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -33,16 +33,14 @@ const Home = () => {
         <div className="banner">
           <div className="banner-desc">
             <h1 className="text-thin">
-              <strong>See</strong>
-              &nbsp;everything with&nbsp;
-              <strong>K Eco</strong>
+              <strong>Plant a tree, make the world green</strong>
             </h1>
             <p>
-              Feel free to explore our website, discover our eco-friendly products and services, and be a part of the change.
+              Planting a tree is a simple yet powerful way to make the world a greener place.
             </p>
             <br />
             <Link to={SHOP} className="button">
-              Shop Now &nbsp;
+              Plant Now &nbsp;
               <ArrowRightOutlined />
             </Link>
           </div>

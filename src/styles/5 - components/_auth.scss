@@ -39,6 +39,16 @@
       text-align: center;
     }
   }
+
+
+  .sign-in-logo {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 70%;
+      height: 70%;
+    }
+  }
 }
 
 .auth-provider {
