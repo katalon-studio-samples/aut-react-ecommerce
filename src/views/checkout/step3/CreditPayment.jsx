@@ -33,7 +33,7 @@ const CreditPayment = () => {
 
   const onCreditModeChange = (e) => {
     if (e.target.checked) {
-      setValues({ ...values, type: 'credit' });
+      setValues({ ...values, type: 'credit', name: '', cardnumber: '', expiry: '', ccv: '' });
       toggleCollapse();
     }
   };

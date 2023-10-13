@@ -21,6 +21,11 @@ const Total = ({ isInternational, subtotal }) => {
     history.push(CHECKOUT_STEP_2);
   };
 
+  const onConfirm = () => {
+    console.log('asdasd', values);
+    submitForm().then(()=>{});
+  }
+
   return (
     <>
       <div className="basket-total text-right">
@@ -43,7 +48,7 @@ const Total = ({ isInternational, subtotal }) => {
         <button
           className="button"
           disabled={false}
-          onClick={submitForm}
+          onClick={onConfirm}
           type="button"
         >
           <CheckOutlined />

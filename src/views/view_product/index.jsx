@@ -53,7 +53,7 @@ const ViewProduct = () => {
   };
 
   return (
-    <main className="content">
+    <main className="content-custom">
       {isLoading && (
         <div className="loader">
           <h4>Loading Product...</h4>

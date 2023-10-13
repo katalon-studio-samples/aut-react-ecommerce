@@ -1,4 +1,4 @@
-import { CHECKOUT_STEP_1 } from '@/constants/routes';
+import {CHECKOUT_STEP_1, HOME} from '@/constants/routes';
 import { Form, Formik } from 'formik';
 import { displayActionMessage } from '@/helpers/utils';
 import { useDocumentTitle, useScrollTop } from '@/hooks';
@@ -11,6 +11,9 @@ import withCheckout from '../hoc/withCheckout';
 import CreditPayment from './CreditPayment';
 import PayPalPayment from './PayPalPayment';
 import Total from './Total';
+import { clearBasket } from '@/redux/actions/basketActions';
+import {useDispatch} from "react-redux";
+import CashPayment from "@/views/checkout/step3/CashPayment";
 
 const FormSchema = Yup.object().shape({
   name: Yup.string()
@@ -30,7 +33,8 @@ const FormSchema = Yup.object().shape({
 });
 
 const Payment = ({ shipping, payment, subtotal }) => {
-  useDocumentTitle('Check Out Final Step | Salinaka');
+  const dispatch = useDispatch();
+  useDocumentTitle('Check Out Final Step | K Eco');
   useScrollTop();
 
   const initFormikValues = {
@@ -42,7 +46,10 @@ const Payment = ({ shipping, payment, subtotal }) => {
   };
 
   const onConfirm = () => {
-    displayActionMessage('Feature not ready yet :)', 'info');
+    displayActionMessage(
+      'Order Success', 'success');
+    dispatch(clearBasket());
+    return <Redirect to={HOME} />
   };
 
   if (!shipping || !shipping.isDone) {
@@ -65,7 +72,7 @@ const Payment = ({ shipping, payment, subtotal }) => {
         {() => (
           <Form className="checkout-step-3">
             <CreditPayment />
-            <PayPalPayment />
+            <CashPayment />
             <Total
               isInternational={shipping.isInternational}
               subtotal={subtotal}

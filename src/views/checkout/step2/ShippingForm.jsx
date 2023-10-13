@@ -1,11 +1,16 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React from 'react';
+import React, {useEffect} from 'react';
 import { CustomInput, CustomMobileInput } from '@/components/formik';
 import { Field, useFormikContext } from 'formik';
 
 
 const ShippingForm = () => {
-  const { values } = useFormikContext();
+  const { values, setValues } = useFormikContext();
+  console.log('vvv', values);
+  useEffect(() => {
+    setValues({...values, mobile: {}, address: '', fullname: '', email: ''});
+  }, [])
+
   return (
     <div className="checkout-shipping-wrapper">
       <div className="checkout-shipping-form">

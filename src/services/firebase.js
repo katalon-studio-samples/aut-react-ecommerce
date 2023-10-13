@@ -32,7 +32,9 @@ class Firebase {
 
   signOut = () => this.auth.signOut();
 
-  passwordReset = (email) => this.auth.sendPasswordResetEmail(email);
+  passwordReset = (email) => {
+    return this.auth.sendPasswordResetEmail(email);
+  }
 
   addUser = (id, user) => this.db.collection("users").doc(id).set(user);
 

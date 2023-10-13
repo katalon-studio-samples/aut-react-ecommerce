@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 
 const Home = () => {
-  useDocumentTitle('Salinaka | Home');
+  useDocumentTitle('K Eco | Home');
   useScrollTop();
 
   const {
@@ -35,11 +35,10 @@ const Home = () => {
             <h1 className="text-thin">
               <strong>See</strong>
               &nbsp;everything with&nbsp;
-              <strong>Clarity</strong>
+              <strong>K Eco</strong>
             </h1>
             <p>
-              Buying eyewear should leave you happy and good-looking, with money in your pocket.
-              Glasses, sunglasses, and contacts—we’ve got your eyes covered.
+              Feel free to explore our website, discover our eco-friendly products and services, and be a part of the change.
             </p>
             <br />
             <Link to={SHOP} className="button">

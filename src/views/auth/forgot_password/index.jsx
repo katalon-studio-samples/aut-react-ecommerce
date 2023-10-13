@@ -16,7 +16,7 @@ const ForgotPassword = () => {
   const [field, setField] = useState({});
 
   useScrollTop();
-  useDocumentTitle('Forgot Password | Salinaka');
+  useDocumentTitle('Forgot Password | K Eco');
   useEffect(() => {
     if (didMount) {
       setForgotPWStatus(authStatus);
@@ -24,8 +24,8 @@ const ForgotPassword = () => {
     }
   }, [authStatus, isAuthenticating]);
 
-  const onEmailChange = (value, error) => {
-    setField({ email: value, error });
+  const onEmailChange = (e, error) => {
+    setField({ email: e.target.value, error });
   };
 
   const onSubmitEmail = () => {

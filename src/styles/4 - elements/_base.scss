@@ -83,6 +83,20 @@ h6 {
   }
 }
 
+.content-custom {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: $top $pad-desktop;
+  //display: flex;
+  animation: fadeIn .5s ease;
+
+  @media (max-width: $mobile) {
+    padding: 5rem $m-size;
+    flex-direction: column;
+  }
+}
+
 .content-admin {
   width: 100%;
   height: 100vh;
