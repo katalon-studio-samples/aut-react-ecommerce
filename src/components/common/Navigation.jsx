@@ -77,14 +77,14 @@ const Navigation = () => {
         <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.FEATURED_PRODUCTS}>Featured</NavLink></li>
         <li><NavLink activeClassName="navigation-menu-active" to={ROUTE.RECOMMENDED_PRODUCTS}>Recommended</NavLink></li>
       </ul>
-      {(pathname === ROUTE.SHOP || pathname === ROUTE.SEARCH) && (
-        <FiltersToggle>
-          <button className="button-muted button-small" type="button">
-            Filters &nbsp;
-            <FilterOutlined />
-          </button>
-        </FiltersToggle>
-      )}
+      {/*{(pathname === ROUTE.SHOP || pathname === ROUTE.SEARCH) && (*/}
+      {/*  <FiltersToggle>*/}
+      {/*    <button className="button-muted button-small" type="button">*/}
+      {/*      Filters &nbsp;*/}
+      {/*      <FilterOutlined />*/}
+      {/*    </button>*/}
+      {/*  </FiltersToggle>*/}
+      {/*)}*/}
       <SearchBar />
       <ul className="navigation-menu">
         <li className="navigation-menu-item">
