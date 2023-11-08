@@ -114,6 +114,7 @@ const CreditPayment = () => {
                   label="* Card Number"
                   placeholder="Enter your card number"
                   component={CustomInput}
+                  className="katalon-excluded"
                 />
               </div>
             </div>
@@ -136,6 +137,7 @@ const CreditPayment = () => {
                   label="* CCV"
                   placeholder="****"
                   component={CustomInput}
+                  className="katalon-excluded"
                 />
               </div>
             </div>
