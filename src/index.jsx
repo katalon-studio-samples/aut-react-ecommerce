@@ -24,13 +24,13 @@ render(<Preloader />, root);
 
 firebase.auth.onAuthStateChanged((user) => {
   if (user) {
-    trueTest.setSessionAttributes({
+    TrueTest.setSessionAttributes({
       email: user.email,
       providerId: user.providerData[0].providerId,
     });
     store.dispatch(onAuthStateSuccess(user));
   } else {
-    trueTest.setSessionAttributes({
+    TrueTest.setSessionAttributes({
       email: 'anonymous',
     });
     store.dispatch(onAuthStateFail('Failed to authenticate'));
