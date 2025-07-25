@@ -28,7 +28,7 @@ firebase.auth.onAuthStateChanged((user) => {
       email: user.email,
       providerId: user.providerData[0].providerId,
       displayName: user.providerData[0].displayName
-      thisIsForTrueTestTesting@123_long_key_display_name_heioHHDNM-test = '-test-add-tri@%#^$&!-!this_value_is_random_from_xu_029392_%@%@&_hello_uuid_value_test_1283839303838393'
+      thisIsForTrueTestTesting123_long_key_display_name_heioHHDNM-test = '-test-add-tri@%#^$&!-!this_value_is_random_from_xu_029392_%@%@&_hello_uuid_value_test_1283839303838393'
     });
     store.dispatch(onAuthStateSuccess(user));
   } else {
