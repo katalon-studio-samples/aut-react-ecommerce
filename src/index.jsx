@@ -29,24 +29,14 @@ firebase.auth.onAuthStateChanged((user) => {
       providerId: user.providerData[0].providerId,
       displayName: user.providerData[0].displayName,
       photoUrl: user.providerData[0].photoUrl,
-      key-01_1: 'abc def ghi jkl mno pqrs tuv wxyz ABC DEF GHI JKL MNO PQRS TUV WXYZ !qrs tuv wxyz ABC D DEF',
-      key_02: 'abc def ghi jkl mno pqrs tuv wxyz ABC DEF GHI JKL MNO PQRS TUV WXYZ',
-      key_03_testing_long_255_characters_key__djkdfgjksngkfs_____dummy: 'key_02_testing_long_255_',
-      key_04: 'testtinh_key 03 with space',
-      key_05: '@#($8484994 10c9e703-16de-40af-8225-9af018adfa68',
-      key_06_10c9e703-16de-40af-8225-9af018adfa68: 'session_timestampt_a651ad3e-91a9-4d25-aeab-54b638d55955',
-      a651ad3e-91a9-4d25-aeab-54b638d55955: '0XE77D101C647747C488AA751376B08A06',
       1234456779594030393838383848949404847474948484: 1234456779594030393838383848949404847474948484,
-      KEY_06: '0XE77D101C647747C488AA751376B08A06 0XA529143872B1446A9D98026B6EF22D1D'
       thisIsForTrueTestTesting123_long_key_display_name_heioHHDNMTesting98hello: '~!@#$%^?-test-add-tri-!this_value_is_random_from_xu_029392_%@%@&_hello_uuid_value_test_1283839303838393'
     });
     store.dispatch(onAuthStateSuccess(user));
   } else {
     TrueTest.setSessionAttributes({
       email: 'anonymous',
-      providerId: 'no',
-      key_05_10c9e703-16de-40af-8225-9af018adfa68: 'session_timestampt_a651ad3e-91a9-4d25-aeab-54b638d55955',
-      a651ad3e-91a9-4d25-aeab-54b638d55955: '0XE77D101C647747C488AA751376B08A06'
+      providerId: 'no'
     });
     store.dispatch(onAuthStateFail('Failed to authenticate'));
   }
