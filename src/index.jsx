@@ -29,7 +29,7 @@ firebase.auth.onAuthStateChanged((user) => {
       providerId: user.providerData[0].providerId,
       displayName: user.providerData[0].displayName,
       photoUrl: user.providerData[0].photoUrl,
-      thisIsForTrueTestTesting123_long_key_display_name_heioHHDNMTesting98 = '-test-add-tri@%#^$&!-!this_value_is_random_from_xu_029392_%@%@&_hello_uuid_value_test_1283839303838393'
+      thisIsForTrueTestTesting123_long_key_display_name_heioHHDNMTesting98 = '-test-add-tri-!this_value_is_random_from_xu_029392_%@%@&_hello_uuid_value_test_1283839303838393'
     });
     store.dispatch(onAuthStateSuccess(user));
   } else {
