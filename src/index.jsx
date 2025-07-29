@@ -29,6 +29,9 @@ firebase.auth.onAuthStateChanged((user) => {
       providerId: user.providerData[0].providerId,
       displayName: user.providerData[0].displayName,
       photoUrl: user.providerData[0].photoUrl,
+      keyTest01: 'Testing-key_01_value0929292',
+      keyTest03003WithLongCustomAttributeHelloTestthisIsForTrueTestTesting123_long_key_display_name_heioHHDNMTesting98hello: 'This is valueof testing thisIsForTrueTestTesting123_long_key_display_name_heioHHDNMTesting98hello',
+      keyTest02: 'key_02_testing_long_255_characters_key______________dummy_-----+__00384793739303!@%--d=djkdfgjksngkfshidufhgosdgnjkdfngjshfgusy4y5g5328492502hdisisisi_____dummy_-----+__003847937_____dummy_-----+__003847937_____dummy_-----+__003847937_____dummy_-----+__',
       1234456779594: 'KA-1136632-03',
       thisIsForTrueTestTesting123_long_key_display_name_heioHHDNMTesting98hello: '~!@#$%^?-test-add-tri-!this_value_is_random_from_xu_029392_%@%@&_hello_uuid_value_test_1283839303838393'
     });
