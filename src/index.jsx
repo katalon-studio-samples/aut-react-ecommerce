@@ -25,7 +25,6 @@ render(<Preloader />, root);
 firebase.auth.onAuthStateChanged((user) => {
   if (user) {
     TrueTest.setSessionAttributes({
-      __k_src: 'testpak',
       email: user.email,
       providerId: user.providerData[0].providerId,
       displayName: user.providerData[0].displayName,
