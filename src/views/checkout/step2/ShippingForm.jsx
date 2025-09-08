@@ -23,6 +23,7 @@ const ShippingForm = () => {
               placeholder="Enter your full name"
               component={CustomInput}
               style={{ textTransform: 'capitalize' }}
+              className="katalon-included"
             />
           </div>
           <div className="d-block checkout-field">
@@ -43,6 +44,7 @@ const ShippingForm = () => {
               label="* Shipping Address"
               placeholder="Enter full shipping address"
               component={CustomInput}
+              className="katalon-included"
             />
           </div>
           <div className="d-block checkout-field">
