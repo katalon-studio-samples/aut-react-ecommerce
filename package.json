@@ -59,6 +59,7 @@
     "history": "^4.10.0",
     "moment": "^2.29.1",
     "normalize.css": "^8.0.1",
+    "posthog-js": "^1.266.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-compound-slider": "^3.3.1",

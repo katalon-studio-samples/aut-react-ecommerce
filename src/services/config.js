@@ -6,7 +6,9 @@ const firebaseConfig = {
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: import.meta.env.VITE_FIREBASE_MSG_SENDER_ID,
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
-  measurementId: import.meta.env.VITE_FIREBASE_MEA_ID
+  measurementId: import.meta.env.VITE_FIREBASE_MEA_ID,
+  postHogKey: import.meta.env.VITE_PUBLIC_POSTHOG_KEY,
+  postHogHost: import.meta.env.VITE_PUBLIC_POSTHOG_HOST,
 };
 
 export default firebaseConfig;
